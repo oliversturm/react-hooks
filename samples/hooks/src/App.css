@@ -1,0 +1,24 @@
+.counter {
+  padding: 10px;
+}
+
+.counter div,
+button {
+  margin: 20px;
+}
+
+.standalone {
+  background-color: lightcyan;
+}
+
+.functional {
+  background-color: pink;
+}
+
+.standardhook {
+  background-color: blanchedalmond;
+}
+
+.customhook {
+  background-color: lightgreen;
+}
