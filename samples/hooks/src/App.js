@@ -9,6 +9,7 @@ import CustomHookCounter from './CustomHookCounter';
 import WindowInfo from './WindowInfo';
 
 import Debounce from './Debounce';
+import ReducerCounter from './ReducerCounter';
 
 const HocCounter = withCounter(FunctionalCounter);
 
@@ -25,6 +26,7 @@ function App() {
       <HocCounter />
       <StandardHookCounter />
       <CustomHookCounter />
+      <ReducerCounter />
 
       <div className="editor">
         <Debounce value={editVal} onChange={setEditVal}>

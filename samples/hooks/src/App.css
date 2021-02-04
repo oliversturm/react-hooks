@@ -32,6 +32,10 @@ button {
   background-color: lightgreen;
 }
 
+.reducer {
+  background-color: lightsalmon;
+}
+
 .editor {
   padding: 10px;
   margin: 10px;
