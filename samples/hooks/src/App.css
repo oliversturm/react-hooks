@@ -1,3 +1,11 @@
+.windowInfo {
+  margin: 10px;
+  padding: 10px;
+  background-color: cornflowerblue;
+  color: white;
+  font-weight: bold;
+}
+
 .counter {
   padding: 10px;
 }
