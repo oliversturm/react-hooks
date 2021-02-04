@@ -1,32 +1,13 @@
-import { useCallback, useEffect, useState } from 'react';
+import React from 'react';
 
-// Kudos to Dan Abramov for (I think) the first version of
-// a similar hook in his proposal paper.
+import useWindowInfo from './WindowInfoHook';
 
-const useWindowInfo = () => {
-  const [info, setInfo] = useState({});
+const WindowInfo = () => {
+  const windowInfo = useWindowInfo();
 
-  const handler = useCallback(() => {
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-    const layout =
-      width > height * 1.1
-        ? 'landscape'
-        : height > width * 1.1
-        ? 'portrait'
-        : 'square';
-    setInfo({ width, height, layout });
-  }, [setInfo]);
-
-  useEffect(() => {
-    window.addEventListener('resize', handler);
-    handler();
-    return () => {
-      window.removeEventListener('resize', handler);
-    };
-  }, [handler]);
-
-  return info;
+  return (
+    <div className="windowInfo">{`Window is ${windowInfo.width}x${windowInfo.height}, a ${windowInfo.layout} layout.`}</div>
+  );
 };
 
-export default useWindowInfo;
+export default WindowInfo;

@@ -8,11 +8,12 @@
 
 .counter {
   padding: 10px;
+  margin: 10px;
 }
 
 .counter div,
 button {
-  margin: 20px;
+  margin: 10px;
 }
 
 .standalone {
