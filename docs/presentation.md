@@ -74,112 +74,46 @@ const MyComponent = () => {
 
 ---
 
+class: impact
+
+# Demo
+
+## Classes, HOCs, and Hooks
+
+## Custom Hooks
+
+---
+
 class: columns-ul
 
-## Fragen
+## Standard Hooks
 
-- Cloud - Kostenkontrolle - wie weiss man, was die eigene Anwendung kostet?
-- Hochverfuegbarkeit notwendig - kann man "hybrid" oder lokal arbeiten, wenn die Cloud unzugaenglich ist? Docker - Registry lokal?
-- On Premise-System in die Cloud migrieren, moeglichst ohne Aenderungen, was sind die Stolpersteine?
-- GraphQL - wo gehoert das ins Datenzugriffssystem? Im Vergleich mit OData?
-- Daten transferieren zwischen lokal und Cloud im Hybridsetup? Datenbankinhalte
-- Beispiel Consul - Azure-Service oder separater Container - SaaS oder separates Deployment?
-
----
-
-## Vor COVID - Eingeschränkter Remotezugriff
-
-.svg-light-width-padding[![](pre-covid-remote-access-org.png)]
+- `useState` - simple state management
+- `useEffect` - run imperative code when deps change
+- `useContext` - access React context
+- `useReducer` - advanced state management
+- `useMemo` - memoize a value and recalculate when deps change
+- `useCallback` - memoization helper for functions, simplify syntax just a little over `useMemo`
+- `useRef` - "local variable", often used with refs
+- `useImperativeHandle` - special support for forward refs
+- `useLayoutEffect` - special variant of `useEffect` for synchronous effects
+- `useDebugValue` - add debug label to custom hook
 
 ---
 
-## Vor COVID - Eingeschränkte Remote-Funktionalität
+## Hooks in 3rd party libraries
 
-.svg-light-100[![](pre-covid-remote-access-erp-modules.png)]
-
----
-
-## Fernzugriff auf eine Datenbank
-
-.svg-light-100[![](database-remote-access-through-vpn.png)]
+- 3rd party libraries started adopting hooks quickly
+- Most current libraries now offer hooks as an alternative to their old APIs
+- Examples coming up: Material UI and Redux
 
 ---
 
-## Fernzugriff mit Remote Desktop
+class: impact
 
-.svg-light-100[![](remote-desktop-access.png)]
+# Demo
 
----
-
-## Einfache Web-Anwendung
-
-.svg-light-100[![](simple-web-application.png)]
-
----
-
-## (Micro-?) Services
-
-.svg-light-100[![](microservices-based-application.png)]
-
----
-
-## Dienststruktur - Micro oder Größer
-
-.svg-light[![](microservices-logical.svg)]
-
----
-
-## CQRS
-
-.svg-light[![](cqrs.svg)]
-
----
-
-## CQRS mit Event Sourcing
-
-.svg-light[![](cqrs-es.svg)]
-
----
-
-## GraphQL Basics
-
-.svg-light[![](graphql-basics.svg)]
-
----
-
-## GraphQL Endpoint in Readmodel
-
-.svg-light[![](graphql-endpoint-in-read-model.svg)]
-
----
-
-## GraphQL - Frontend Service
-
-.svg-light[![](frontend-graphql-service.svg)]
-
----
-
-## Hypervisors
-
-.svg-light-width[![](hypervisors.svg)]
-
----
-
-## Container und VMs
-
-.svg-light[![](containers-and-vms.svg)]
-
----
-
-## CAP Theorem
-
-.svg-light[![](cap-theorem.svg)]
-
----
-
-## JavaScript vs TypeScript
-
-.svg-light[![](static-types.svg)]
+## Standard and 3rd Party Hooks
 
 ---
 
@@ -187,8 +121,8 @@ class: columns-ul
 
 - This presentation:
 
-  - https://oliversturm.github.io/developers-and-architects/basta-2020
-  - PDF download: <br>https://oliversturm.github.io/developers-and-architects/basta-2020/slides.pdf
+  - https://oliversturm.github.io/react-hooks/
+  - PDF download: <br>https://oliversturm.github.io/react-hooks/slides.pdf
 
 ---
 
