@@ -121,6 +121,7 @@ class: impact
 
 - This presentation:
 
+  - Repository with sample code: <br>https://github.com/oliversturm/react-hooks
   - https://oliversturm.github.io/react-hooks/
   - PDF download: <br>https://oliversturm.github.io/react-hooks/slides.pdf
 
